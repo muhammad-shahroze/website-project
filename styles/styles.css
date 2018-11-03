@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Concert One', cursive;
     list-style: none;
+    color: white;
 }
 
 html,body{
@@ -42,6 +43,7 @@ html,body{
     background-blend-mode: darken;
 }
 
+@media screen and (min-width:600px) {
 h1 {
     color: white;
     width: auto;
@@ -52,7 +54,7 @@ h1 {
     position: relative;
     left: 22px;
     top: 60px;
-
+}
 }
 
 h2{
@@ -81,6 +83,7 @@ h2{
 
 }
 
+@media screen and (min-width:600px) {
 .nav{
     width: 11.4%;
     height: 613px;
@@ -90,6 +93,7 @@ h2{
     top: 20%;
     right: 0;
     transform: (translateX(-50%), translateY(-50%));
+}
 }
 
 .nav a{
@@ -133,10 +137,10 @@ li {
     margin: 20px 0;
     width: 500px;
     height: 5px;
-    padding: 20px;
+    padding: 10px;
     padding-right: 480px;
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .bar {
@@ -150,28 +154,28 @@ li {
 }
 
 .bar span{
-    height: 8px;
+    height: 10px;
     float: left;
     background: white;
 }
 
 .html {
-    width: 90%;
+    width: 50%;
     animation: html 2s;
 }
 
 .css {
-    width: 90%;
+    width: 50%;
     animation: css 2s;
 }
 
 .javascript {
-    width: 90%;
+    width: 60%;
     animation: javascript 2s;
 }
 
 .github {
-    width: 90%;
+    width: 40%;
     animation: github 2s;
 }
 
@@ -180,7 +184,7 @@ li {
         width: 0%;
     }
     100%{
-        width: 90%;
+        width: 50%;
     }
 }
 
@@ -189,7 +193,7 @@ li {
         width: 0%;
     }
     100%{
-        width: 90%;
+        width: 50%;
     }
 }
 
@@ -198,7 +202,7 @@ li {
         width: 0%;
     }
     100%{
-        width: 90%;
+        width: 40%;
     }
 }
 
@@ -207,7 +211,7 @@ li {
         width: 0%;
     }
     100%{
-        width: 90%;
+        width: 60%;
     }
 }
 
@@ -217,23 +221,34 @@ li {
     height: 100px;
     padding-right: 100px;
     margin-left: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     font-size: 50px;
     position: relative;
     left: 22px;
-    top: 60px;
-    bottom: 200px;
+    top: 20px;
+    bottom: 100px;
 }
 
 .s-profile li{
     color: white;
-    width: 800px;
-    height: 8px;
-    padding: 30px;
+    width: 1000px;
+    height: 6px;
     padding-right: 480px;
-    display: inline-block;
-    margin-top: 10px;
+    position: relative;
+    bottom: 20px;
     margin-left: 100px;
+    padding-bottom: 50px;
+}
+
+.s-profile ul{
+    font-size: 15px;
+    position: relative;
+    color: white;
+    text-align: left;
+    padding-right: 150px;
+    left: 20px;
+    bottom: 40px;
+    font-weight: bold;
 }
 
 form{
@@ -323,7 +338,7 @@ form .clear:hover{
     font-weight: bold;
 }
 
-.about-intro p{
+.intro p{
     font-size: 15px;
     color: white;
     text-align: center;
